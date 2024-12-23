@@ -9,6 +9,9 @@ ndr_switches.out
 
 A cleaned up Topology file created with "ibnetdiscover > ib_topology" then modified using the commands in cleanup_topology.info
 
+Beware ibnetdiscover. If you have a port down or a node offline it'll just skip that port on the switch. IE it won't have that port in the list and you'll need to add it manually or the "To" switch will be one off. Not sure how to get around this yet. So, it port 35 of switch leaf10 is down it'll go
+[33],[34],[36],[37]
+
 A file called ndr_switches.out that is a mapping of all switch information. This is used to output the switch info for down ports.
 Switch_Name, location, RU#, Serial_Number, IP_Addr (The file here has been cleaned up to be generic)
 
