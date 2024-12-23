@@ -15,4 +15,5 @@ Switch_Name, location, RU#, Serial_Number, IP_Addr (The file here has been clean
 You will also need to create an array in check_all_ports.sh that has the smpwalk map to each switch. In this script I have 64 leaf switches I walk through. So the array is 0-64 (I ignore [0]). 
 
 Once I figure out the wiki formatting for this readme I'll make this cleaner. 
+
 Rich
