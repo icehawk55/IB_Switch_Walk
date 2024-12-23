@@ -1,0 +1,13 @@
+cat ib_topology|egrep '^Switch|^\[' |grep -v Aggregation > freddy.out
+
+cat freddy.out |grep -A64 ^Switch > wilma
+
+cat wilma |awk '{print $1,$4,$5}' > betty.out
+
+vim betty.out
+%s/Switch # "MF0;//g
+%s/:MQM9700\/U1"//g
+%s/"MF0;//g
+%s/lid//g
+
+

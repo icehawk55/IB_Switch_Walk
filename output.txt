@@ -1,0 +1,14 @@
+----------------------------------------------
+cluster-p1-ndr-leaf24 Port [54] 
+SLC03.140E.03.08 RU47 SN:SerialNum 10.10.11.24
+To 
+cluster-p2-ndr-spine22 Port [24]
+location.05.01 RU12 SN:SerialNum 10.10.12.38
+
+----------------------------------------------
+cluster-p2-ndr-leaf30 Port [45] 
+SLC03.140E.08.06 RU47 SN:SerialNum 10.10.12.30
+To 
+cluster-p1-ndr-spine13 Port [62]
+location.04.01 RU26 SN:SerialNum 10.10.11.45
+
