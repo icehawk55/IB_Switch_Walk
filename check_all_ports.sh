@@ -93,14 +93,14 @@ leaf[64]="0,1,1,33,64"
 #-----------------------------------------------------------------
 # Walk through the switch array. 
 #-----------------------------------------------------------------
-for i in `seq 1 64`
+for i in $(seq 1 64)
 do
 	#-----------------------------------------------------------------
 	# Walk through the switch ports 1-64 on spine01
 	# Ports 1-32 are node ports
 	# Ports 33-64 are switch to switch ports
 	#-----------------------------------------------------------------
-	for port in `seq 1 64`
+	for port in $(seq 1 64)
 	do
 		/usr/sbin/smpquery -C mlx5_0 -D ND ${leaf[$i]},$port 1&> /dev/null
 
