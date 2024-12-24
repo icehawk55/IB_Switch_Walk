@@ -14,6 +14,8 @@ The tool uses 3 primary files to do this.
 - check_all_ports.sh
 - cleaned_topology.out
 - ndr_switches.out
+- switches.map
+
 
 A cleaned up Topology file created with "ibnetdiscover > ib_topology" then modified using the commands in cleanup_topology.info
 
@@ -23,8 +25,7 @@ Beware ibnetdiscover. If you have a port down or a node offline it'll just skip 
 A file called ndr_switches.out that is a mapping of all switch information. This is used to output the switch info for down ports. The script does a "switch name" lookup against this file and pulls the info.
 Switch_Name, location, RU#, Serial_Number, IP_Addr (The file here has been cleaned up to be generic)
 
-You will also need to create an array in check_all_ports.sh that has the smpwalk map to each switch. In this script I have 64 leaf switches I walk through. So the array is 0-64 (I ignore [0]). 
+You will also need to create an array in switches.map that has the smpwalk map to each switch. In this example I have 64 leaf switches I walk through. So the array is 0-64 (I ignore [0]). 
 
-Once I figure out the wiki formatting for this readme I'll make this cleaner. 
 
 Rich
