@@ -146,6 +146,6 @@ done > /root/scripts/output.txt
 #-----------------------------------------------------------------
 # email the results
 #-----------------------------------------------------------------
-/bin/mail -s "`date +%m/%d/%Y` Cluster Ports" rhickey@applieddigital.com < /root/scripts/output.txt
+/bin/mail -s "`date +%m/%d/%Y` Cluster Ports" BarneyRubble@bedrock.com < /root/scripts/output.txt
 
 
