@@ -10,4 +10,4 @@ vim betty.out
 %s/"MF0;//g
 %s/lid//g
 
-
+mv betty.out cleaned_topology
